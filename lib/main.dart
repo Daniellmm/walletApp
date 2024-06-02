@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:new_project/controllers/bottom_nav.dart';
 import 'package:new_project/pages/Auth%20pages/signin.dart';
+import 'package:new_project/pages/splash/onboarding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       
-      home: Loginpage()
+      home: OnboardingScreen()
     );
   }
 }

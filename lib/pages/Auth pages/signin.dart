@@ -31,14 +31,14 @@ class _LoginpageState extends State<Loginpage> {
                   style: TextStyle(
                       color: white, fontSize: 20, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 Text(
                   "Sign in to continue",
                   style: TextStyle(color: white, fontSize: 17),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 Row(
@@ -59,7 +59,7 @@ class _LoginpageState extends State<Loginpage> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 Row(
@@ -76,7 +76,7 @@ class _LoginpageState extends State<Loginpage> {
                         color: white,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15,
                     ),
                     Expanded(
@@ -94,7 +94,7 @@ class _LoginpageState extends State<Loginpage> {
                     )),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Row(
@@ -111,7 +111,7 @@ class _LoginpageState extends State<Loginpage> {
                         color: white,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15,
                     ),
                     Expanded(
@@ -125,13 +125,13 @@ class _LoginpageState extends State<Loginpage> {
                           focusedBorder: OutlineInputBorder(
                               borderSide: BorderSide(color: purple)),
                           hintText: "Password",
-                          suffixIcon: Icon(Icons.remove_red_eye),
+                          suffixIcon: const Icon(Icons.remove_red_eye),
                           hintStyle: TextStyle(color: Colors.grey.shade700)),
                       style: TextStyle(color: white),
                     )),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 InkWell(
@@ -146,13 +146,13 @@ class _LoginpageState extends State<Loginpage> {
                     style: TextStyle(color: white),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 InkWell(
                   onTap: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomePage()));
+                        MaterialPageRoute(builder: (context) => const HomePage()));
                   },
                   child: Container(
                     height: 60,
@@ -167,13 +167,13 @@ class _LoginpageState extends State<Loginpage> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 InkWell(
                   onTap: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => SignUp()));
+                        MaterialPageRoute(builder: (context) => const SignUp()));
                   },
                   child: Container(
                     height: 60,
@@ -188,7 +188,7 @@ class _LoginpageState extends State<Loginpage> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Center(

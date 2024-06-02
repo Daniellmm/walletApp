@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
@@ -186,7 +186,7 @@ class _HomePageState extends State<HomePage> {
                       decoration: BoxDecoration(
                           color: glass,
                           borderRadius: BorderRadius.circular(16)),
-                      child: Center(
+                      child: const Center(
                         child: Icon(
                           Icons.file_download_outlined,
                           color: Colors.pink,
@@ -236,7 +236,7 @@ class _HomePageState extends State<HomePage> {
                       decoration: BoxDecoration(
                           color: glass,
                           borderRadius: BorderRadius.circular(16)),
-                      child: Center(
+                      child: const Center(
                         child: Icon(
                           Icons.account_balance_outlined,
                           color: Colors.lightBlue,
@@ -255,7 +255,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             SingleChildScrollView(
@@ -263,7 +263,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    margin: const EdgeInsets.symmetric(horizontal: 20),
                     width: MediaQuery.sizeOf(context).width,
                     decoration: BoxDecoration(
                       color: lightpurple,
@@ -280,7 +280,7 @@ class _HomePageState extends State<HomePage> {
                             color: green,
                             size: 43,
                           )),
-                          SizedBox(
+                          const SizedBox(
                             width: 15,
                           ),
                           Column(
@@ -305,7 +305,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    margin: const EdgeInsets.symmetric(horizontal: 20),
                     width: MediaQuery.sizeOf(context).width,
                     decoration: BoxDecoration(
                       color: Colors.transparent,
@@ -323,7 +323,7 @@ class _HomePageState extends State<HomePage> {
                             color: green,
                             size: 43,
                           )),
-                          SizedBox(
+                          const SizedBox(
                             width: 15,
                           ),
                           Column(
@@ -350,7 +350,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
@@ -358,12 +358,12 @@ class _HomePageState extends State<HomePage> {
               width: MediaQuery.sizeOf(context).width,
               decoration: BoxDecoration(
                   color: glass,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(35),
                       topRight: Radius.circular(35))),
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Center(
@@ -373,7 +373,7 @@ class _HomePageState extends State<HomePage> {
                           TextStyle(color: white, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 4,
                   ),
                   Center(
@@ -383,7 +383,7 @@ class _HomePageState extends State<HomePage> {
                       color: white,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
@@ -396,7 +396,7 @@ class _HomePageState extends State<HomePage> {
                             Icons.phone_android,
                             color: green,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -411,7 +411,7 @@ class _HomePageState extends State<HomePage> {
                             Icons.wifi_tethering,
                             color: green,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -426,7 +426,7 @@ class _HomePageState extends State<HomePage> {
                             Icons.book_sharp,
                             color: green,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -441,7 +441,7 @@ class _HomePageState extends State<HomePage> {
                             Icons.wifi,
                             color: green,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -452,7 +452,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                   Row(
@@ -465,7 +465,7 @@ class _HomePageState extends State<HomePage> {
                             Icons.movie_creation_outlined,
                             color: green,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -480,7 +480,7 @@ class _HomePageState extends State<HomePage> {
                             Icons.store_mall_directory_outlined,
                             color: green,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -495,7 +495,7 @@ class _HomePageState extends State<HomePage> {
                             Icons.food_bank_outlined,
                             color: green,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -510,7 +510,7 @@ class _HomePageState extends State<HomePage> {
                             Icons.more_horiz,
                             color: green,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(

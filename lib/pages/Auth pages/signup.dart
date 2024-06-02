@@ -30,14 +30,14 @@ class _SignUpState extends State<SignUp> {
                   style: TextStyle(
                       color: white, fontSize: 20, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 Text(
                   "Create a new account",
                   style: TextStyle(color: white, fontSize: 17),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 Row(
@@ -58,7 +58,7 @@ class _SignUpState extends State<SignUp> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 Row(
@@ -75,7 +75,7 @@ class _SignUpState extends State<SignUp> {
                         color: white,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15,
                     ),
                     Expanded(
@@ -93,7 +93,7 @@ class _SignUpState extends State<SignUp> {
                     )),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Row(
@@ -110,7 +110,7 @@ class _SignUpState extends State<SignUp> {
                         color: white,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15,
                     ),
                     Expanded(
@@ -128,7 +128,7 @@ class _SignUpState extends State<SignUp> {
                     )),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Row(
@@ -145,7 +145,7 @@ class _SignUpState extends State<SignUp> {
                         color: white,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15,
                     ),
                     Expanded(
@@ -159,13 +159,13 @@ class _SignUpState extends State<SignUp> {
                           focusedBorder: OutlineInputBorder(
                               borderSide: BorderSide(color: purple)),
                           hintText: "Password",
-                          suffixIcon: Icon(Icons.remove_red_eye),
+                          suffixIcon: const Icon(Icons.remove_red_eye),
                           hintStyle: TextStyle(color: Colors.grey.shade700)),
                       style: TextStyle(color: white),
                     )),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -180,13 +180,13 @@ class _SignUpState extends State<SignUp> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 InkWell(
                   onTap: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Loginpage()));
+                        MaterialPageRoute(builder: (context) => const Loginpage()));
                   },
                   child: Container(
                     height: 60,

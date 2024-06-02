@@ -52,7 +52,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
                     Text(
@@ -61,7 +61,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 Row(
@@ -82,7 +82,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 Row(children: [
@@ -90,14 +90,14 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     Icons.mail_outline,
                     color: white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   Text(
                     "Email Id",
                     style: TextStyle(color: white),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 4,
                   ),
                   Container(
@@ -105,7 +105,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     color: Colors.grey.shade600,
                     height: 35,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   Expanded(
@@ -123,14 +123,14 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     ),
                   ),
                 ]),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Text(
                   "Enter your registered Email Id",
                   style: TextStyle(color: white),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Container(
