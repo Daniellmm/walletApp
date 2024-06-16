@@ -16,136 +16,137 @@ class _ForgotPasswordState extends State<ForgotPassword> {
       backgroundColor: backgroundColor,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-              
-                Row(
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute<void>(
-                              builder: (BuildContext context) =>
-                                  const Loginpage(),
-                            ));
-                      },
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: glass,
-                            borderRadius: BorderRadius.circular(8)),
-                        child: Center(
-                          child: Padding(
-                            padding: const EdgeInsets.all(9.0),
-                            child: Icon(
-                              Icons.arrow_back_ios_new,
-                              color: white,
-                              size: 15,
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+          child: SingleChildScrollView(
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                
+                  Row(
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute<void>(
+                                builder: (BuildContext context) =>
+                                    const Loginpage(),
+                              ));
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: glass,
+                              borderRadius: BorderRadius.circular(8)),
+                          child: Center(
+                            child: Padding(
+                              padding: const EdgeInsets.all(9.0),
+                              child: Icon(
+                                Icons.arrow_back_ios_new,
+                                color: white,
+                                size: 15,
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    ),
-                    const SizedBox(
-                      width: 25,
-                    ),
-                    Text(
-                      "Forgot Password",
-                      style: TextStyle(color: white),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 40,
-                ),
-                Row(
-                  children: [
-                    Text(
-                      'Pay',
-                      style: TextStyle(
-                          color: purple,
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      'Me',
-                      style: TextStyle(
-                          color: green,
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 25,
-                ),
-                Row(children: [
-                  Icon(
-                    Icons.mail_outline,
-                    color: white,
+                      const SizedBox(
+                        width: 25,
+                      ),
+                      Text(
+                        "Forgot Password",
+                        style: TextStyle(color: white),
+                      ),
+                    ],
                   ),
                   const SizedBox(
-                    width: 8,
+                    height: 40,
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        'Pay',
+                        style: TextStyle(
+                            color: purple,
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        'Me',
+                        style: TextStyle(
+                            color: green,
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 25,
+                  ),
+                  Row(children: [
+                    Icon(
+                      Icons.mail_outline,
+                      color: white,
+                    ),
+                    const SizedBox(
+                      width: 8,
+                    ),
+                    Text(
+                      "Email Id",
+                      style: TextStyle(color: white),
+                    ),
+                    const SizedBox(
+                      width: 4,
+                    ),
+                    Container(
+                      width: 2,
+                      color: Colors.grey.shade600,
+                      height: 35,
+                    ),
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    Expanded(
+                      child: TextFormField(
+                        decoration: InputDecoration(
+                            label: Text(
+                              "Email",
+                              style: TextStyle(color: white),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: purple)),
+                            hintText: "Enter your email id",
+                            hintStyle: TextStyle(color: Colors.grey.shade700)),
+                        style: TextStyle(color: white),
+                      ),
+                    ),
+                  ]),
+                  const SizedBox(
+                    height: 20,
                   ),
                   Text(
-                    "Email Id",
+                    "Enter your registered Email Id",
                     style: TextStyle(color: white),
                   ),
                   const SizedBox(
-                    width: 4,
+                    height: 30,
                   ),
                   Container(
-                    width: 2,
-                    color: Colors.grey.shade600,
-                    height: 35,
-                  ),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  Expanded(
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                          label: Text(
-                            "Email",
-                            style: TextStyle(color: white),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: purple)),
-                          hintText: "Enter your email id",
-                          hintStyle: TextStyle(color: Colors.grey.shade700)),
-                      style: TextStyle(color: white),
+                    height: 60,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                        color: purple, borderRadius: BorderRadius.circular(24)),
+                    child: Center(
+                      child: Text(
+                        "Send OTP",
+                        style: TextStyle(color: white, fontSize: 18),
+                      ),
                     ),
                   ),
-                ]),
-                const SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  "Enter your registered Email Id",
-                  style: TextStyle(color: white),
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                Container(
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                      color: purple, borderRadius: BorderRadius.circular(24)),
-                  child: Center(
-                    child: Text(
-                      "Send OTP",
-                      style: TextStyle(color: white, fontSize: 18),
-                    ),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),

@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
               height: 20,
             ),
             Container(
-              margin: const EdgeInsets.symmetric(horizontal: 20),
+              margin: const EdgeInsets.symmetric(horizontal: 15),
               height: 150,
               width: double.infinity,
               decoration: BoxDecoration(
@@ -263,15 +263,15 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 20),
-                    width: MediaQuery.sizeOf(context).width,
+                    margin: const EdgeInsets.only(left: 15),
+                    width: 300,
                     decoration: BoxDecoration(
                       color: lightpurple,
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
-                          vertical: 25.0, horizontal: 40),
+                          vertical: 25.0, horizontal: 15),
                       child: Row(
                         children: [
                           Center(
@@ -305,8 +305,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 20),
-                    width: MediaQuery.sizeOf(context).width,
+                    margin: const EdgeInsets.symmetric(horizontal: 13),
+                    width: 300,
                     decoration: BoxDecoration(
                       color: Colors.transparent,
                       border: Border.all(color: glass),
@@ -314,7 +314,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
-                          vertical: 25.0, horizontal: 40),
+                          vertical: 25.0, horizontal: 15),
                       child: Row(
                         children: [
                           Center(
@@ -353,8 +353,9 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(
               height: 20,
             ),
+           
             Container(
-              height: 240,
+              height: MediaQuery.sizeOf(context).height *.4,
               width: MediaQuery.sizeOf(context).width,
               decoration: BoxDecoration(
                   color: glass,
@@ -362,10 +363,9 @@ class _HomePageState extends State<HomePage> {
                       topLeft: Radius.circular(35),
                       topRight: Radius.circular(35))),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  const SizedBox(
-                    height: 15,
-                  ),
+                  
                   Center(
                     child: Text(
                       "PayMe Services",
@@ -373,9 +373,7 @@ class _HomePageState extends State<HomePage> {
                           TextStyle(color: white, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  const SizedBox(
-                    height: 4,
-                  ),
+                  
                   Center(
                     child: Container(
                       height: 3,
@@ -383,9 +381,7 @@ class _HomePageState extends State<HomePage> {
                       color: white,
                     ),
                   ),
-                  const SizedBox(
-                    height: 30,
-                  ),
+                 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -411,9 +407,7 @@ class _HomePageState extends State<HomePage> {
                             Icons.wifi_tethering,
                             color: green,
                           ),
-                          const SizedBox(
-                            height: 5,
-                          ),
+                         
                           Text(
                             "Data",
                             style: TextStyle(color: white),
@@ -426,9 +420,7 @@ class _HomePageState extends State<HomePage> {
                             Icons.book_sharp,
                             color: green,
                           ),
-                          const SizedBox(
-                            height: 5,
-                          ),
+                          
                           Text(
                             "Bookshop",
                             style: TextStyle(color: white),
@@ -441,9 +433,7 @@ class _HomePageState extends State<HomePage> {
                             Icons.wifi,
                             color: green,
                           ),
-                          const SizedBox(
-                            height: 5,
-                          ),
+                          
                           Text(
                             "Wifi",
                             style: TextStyle(color: white),
@@ -452,9 +442,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-                  const SizedBox(
-                    height: 40,
-                  ),
+                  
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
